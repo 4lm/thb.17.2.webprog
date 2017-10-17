@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, green, white, white, red);
+}
+#container {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 600px;
+    margin: auto;
+    background-color: lightgoldenrodyellow;
+    padding: 25px;
+    margin-top: 20px;
+}
+.mandatory {
+    color: red;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: 20px;
+}
+#specification {
+    font-size: 12px;
+}
