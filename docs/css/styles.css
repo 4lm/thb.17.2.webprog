@@ -9,3 +9,8 @@
 .link {
     padding-bottom: 20px;
 }
+
+hr {
+    width: 600px;
+    margin: 0px 0px 20px 0px;
+}
