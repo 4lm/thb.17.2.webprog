@@ -172,13 +172,13 @@ abbr {
     font-size: 1em;
   }
   header[role=banner] {
-    padding: 25px 75px 57px 75px;
+    padding: 25px 50px 57px 50px;
   }
   h1, h2, h3 {
     text-align: center;
   }
 	div[role=article] {
-    margin: 25px 75px 25px 75px;
+    margin: 25px 50px 25px 50px;
     text-align: justify;
 	}
   .design-selection, .design-archives, .zen-resources  {
