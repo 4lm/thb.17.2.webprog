@@ -5,7 +5,12 @@
 	margin: 0px;
 }
 html {
-	background-color: #5c007a;
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: #5c007a;
 }
 body {
 	background-color: rgb(225,225,225);
@@ -27,15 +32,15 @@ h2 {
 	font-style: italic;
 	font-weight: 100;
 }
+header[role=banner] {
+	margin: 50px 0px 0px 0px;
+	padding: 25px 0px 57px 125px;
+  background-color: #8e24aa;
+}
 div[role=article] > h3 {
 	color: #000000;
 	font-size: 20px;
 	margin: 50px 0px 25px 0px;
-}
-header[role=banner] {
-	margin: 50px 0px 0px 0px;
-	padding: 25px 0px 57px 125px;
-	background-color: #8e24aa;
 }
 div.summary {
 	padding: 25px 0px 0px 0px;
@@ -51,33 +56,24 @@ div.summary p:nth-child(2) {
 	padding: 25px 0px 0px 0px;
 	font-weight: 900;
 }
-footer, .sidebar > .wrapper {
-	background-color: #8e24aa;
-}
-ul {
-	list-style-type: none;
-	background-color: #ffffff;
-}
-footer {
-	margin-top: 50px;
-  margin-bottom: 50px;
-}
-footer > a {
-  color: #ffffff;
-  text-align: center;
-}
-footer > a:hover {
-	color: #ffe54c;
-}
-footer a {
-  position: relative; 
-  float: left;
-}
-.sidebar > .wrapper {
+.design-selection, .design-archives, .zen-resources {
   position: absolute;
+  background-color: #8e24aa;
   top: 273px;
   right: 0px;
   width: 320px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  margin-bottom: 50px;
+}
+.design-selection:hover, .design-archives:hover, .zen-resources:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+div.design-archives {
+  top: 773px;
+}
+div.zen-resources {
+  top: 973px;
 }
 .sidebar > .wrapper li {
 	font-size: 14px;
@@ -103,6 +99,26 @@ li:hover {
 li a:hover {
 	color: white;
 }
+ul {
+	list-style-type: none;
+	background-color: #ffffff;
+}
+footer {
+  background-color: #8e24aa;
+	margin-top: 50px;
+  margin-bottom: 50px;
+}
+footer > a {
+  color: #ffffff;
+  text-align: center;
+}
+footer > a:hover {
+	color: #ffe54c;
+}
+footer a {
+  position: relative; 
+  float: left;
+}
 a {
 	color: #5c007a;
 	font-weight: bold;
@@ -117,13 +133,13 @@ abbr {
 /* Groß */
 @media (min-width: 1440px) {
   header[role=banner] {
-    padding: 25px 0px 57px 250px;
+    padding: 25px 0px 57px 200px;
   }
 	div[role=article] {
-		margin: 25px 645px 25px 250px;
+		margin: 25px 595px 25px 200px;
 	}
-	.sidebar > .wrapper {
-		margin: 25px 250px 25px 25px;
+	.design-selection, .design-archives, .zen-resources {
+		margin: 25px 200px 25px 25px;
   }
   footer {
     padding: 38px 0 62px 33.33%; 
@@ -141,7 +157,7 @@ abbr {
 	div[role=article] {
 		margin: 25px 520px 25px 125px;
 	}
-	.sidebar > .wrapper {
+	.design-selection, .design-archives, .zen-resources {
 		margin: 25px 125px 25px 25px;
   }
   footer {
@@ -154,14 +170,14 @@ abbr {
 }
   
 /* Klein */
-@media (min-width: 840px) and (max-width: 1099px) {
+@media (min-width: 992px) and (max-width: 1099px) {
   header[role=banner] {
     padding: 25px 0px 57px 75px;
   }
 	div[role=article] {
 		margin: 25px 445px 25px 75px;
 	}
-	.sidebar > .wrapper {
+	.design-selection, .design-archives, .zen-resources {
 		margin: 25px 75px 25px 25px;
   }
   footer {
@@ -174,21 +190,53 @@ abbr {
 }
   
 /* Extra klein */
-@media (max-width: 839px) {
-    header[role=banner] {
-    padding: 25px 0px 57px 50px;
+@media (max-width: 991px) {
+  header[role=banner] {
+    padding: 25px 0px 57px 100px;
   }
 	div[role=article] {
-		margin: 25px 445px 25px 50px;
+		margin: 25px 100px 25px 100px;
 	}
-	.sidebar > .wrapper {
-		margin: 25px 50px 25px 25px;
+  .design-selection, .design-archives, .zen-resources  {
+    position: relative;
+    background-color: #8e24aa;
+    top: 0px;
+    right: 0px;
+    box-shadow: none;
+    transition: none;
+    margin-bottom: 0px;
+    width: 100%;
+    box-shadow: none;
+  }
+  .design-selection:hover, .design-archives:hover, .zen-resources:hover {
+    box-shadow: none;
+  }
+  .design-selection  {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  div.design-archives {
+    top: 0px;
+    margin-bottom: 50px;
+  }
+  div.zen-resources {
+    top: 0px;
+    margin-bottom: 150px;
+  }
+  .sidebar > .wrapper li {
+    padding: 13px 0px 13px 100px;
+  }
+  .sidebar h3 {
+    padding: 11px 0px 11px 100px;
   }
   footer {
-    padding: 38px 0 62px 33.33%; 
+    position: absolute;
+    bottom: 0px;
+    padding: 38px 0 38px 100px; 
     width: 100%;
   }
   footer a {
-    width: 5%;
+    text-align: left;
+    width: 15%;
   }
 }
