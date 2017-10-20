@@ -39,8 +39,18 @@ header[role=banner] > h2 {
 div.summary {
 	font-style: italic;
 }
+div.summary a {
+	color: rgb(197, 53, 0);
+}
+div.summary a:hover {
+	color: orangered;
+}
 div[role=article] {
 	margin: 25px 495px 25px 125px;
+}
+footer, .sidebar > .wrapper {
+	box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.05),
+				0 6px 40px 0 rgba(0, 0, 0, 0.05);
 }
 footer {
 	background-color: #FFF7D0;
@@ -59,17 +69,29 @@ footer > a {
 	width: 320px;
 	margin: 25px 125px 25px 25px;
 }
-footer, .sidebar > .wrapper {
-	box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.05),
-				0 6px 40px 0 rgba(0, 0, 0, 0.05);
+.sidebar > .wrapper li {
+	font-style: italic;
+	font-size: 14px;
+	padding: 5px;
+}
+.sidebar > .wrapper li > a {
+	font-style: normal;
+	font-size: 18px;
+}
+.sidebar > .wrapper li > a.designer-name {
+	font-weight: 100;
+	font-size: 14px;
+}
+.sidebar h3 {
+	padding: 5px 0px 5px 5px;
 }
 a {
-	color: rgb(75, 79, 109);
+	color: rgb(35, 39, 69);
 	font-weight: bold;
 	text-decoration: none;
 }
 a:hover {
-	color: rgb(15, 19, 39);
+	color: rgb(75, 79, 109);
 }
 abbr {
 	text-decoration: none;
