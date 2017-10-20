@@ -13,7 +13,7 @@ body {
 	background-color: rgb(225,225,225);
 	color: #000000;
 	font-family: "Roboto", sans-serif;
-	font-size: 18px;
+  font-size: 18px;
 }
 h1, h2, h3 {
 	font-family: "Roboto Slab", serif;
@@ -52,6 +52,9 @@ div.summary a:hover {
 div.summary p:nth-child(2) {
 	padding: 25px 0px 0px 0px;
 	font-weight: 900;
+}
+div#zen-requirements.requirements {
+  padding-bottom: 50px;
 }
 .design-selection, .design-archives, .zen-resources {
   position: absolute;
@@ -136,15 +139,19 @@ abbr {
 		margin: 25px 595px 25px 200px;
 	}
 	.design-selection, .design-archives, .zen-resources {
-		margin: 25px 200px 25px 25px;
+    margin: 25px 200px 25px 25px;
   }
   footer {
-    padding: 38px 0 62px 33.33%; 
-    width: 100%;
-  }
-  footer a {
-    width: 5%;
-  }
+      position: absolute;
+      bottom: -150px;
+      padding: 38px 0px 38px 0px;
+      width: 100%;
+    }
+    footer a {
+      text-align: left;
+      width: 16%;
+      padding: 0px 0px 0px 200px;
+    }
 }
 /* Mittel */
 @media (min-width: 992px) and (max-width: 1439px) {
@@ -158,11 +165,15 @@ abbr {
 		margin: 25px 125px 25px 25px;
   }
   footer {
-    padding: 38px 0 62px 33.33%; 
+    position: absolute;
+    bottom: -150px;
+    padding: 38px 0px 38px 0px;
     width: 100%;
   }
   footer a {
-    width: 5%;
+    text-align: left;
+    width: 17%;
+    padding: 0px 0px 0px 125px;
   }
 }
 /* Klein */
@@ -202,7 +213,7 @@ abbr {
     box-shadow: none;
   }
   .design-selection  {
-    margin-top: 50px;
+    margin-top: -25px;
     margin-bottom: 50px;
   }
   div.design-archives {
@@ -229,6 +240,6 @@ abbr {
   footer a {
     text-align: center;
     width: 20%;
-    padding: 0px 0px 5px 0px;
+    padding: 0px 25px 0px 25px;
   }
 }
