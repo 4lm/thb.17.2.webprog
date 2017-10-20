@@ -5,7 +5,7 @@
 	margin: 0px;
 }
 body {
-	background-color: rgb(230, 230, 240);
+	background: linear-gradient(to top right, #C9D6FF, #E2E2E2);
 	color: rgb(15, 19, 19);
 	font-family: "Roboto", sans-serif;
 	font-size: 18px;
@@ -13,25 +13,27 @@ body {
 h1, h2, h3 {
 	color: rgb(35, 39, 39);
 	font-family: "Roboto Slab", serif;
+	text-shadow: 2px 2px 25px rgba(0, 0, 0, 0.15);
 }
 h1 {
 	margin: 25px 0px 25px 0px;
-	font-size: 30px;
+	font-size: 60px;
+	font-weight: 100;
 }
 h2 {
-	font-size: 25px;
+	font-size: 30px;
 	font-style: italic;
+	font-weight: 100;
 }
 div[role=article] > h3 {
 	font-size: 20px;
 	margin: 50px 0px 25px 0px;
 }
 header[role=banner] > h1 {
-	background-color: rgb(230, 230, 240);
 	padding: 0px 0px 0px 125px;
 }
 header[role=banner] > h2 {
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(255, 241, 221);
 	box-shadow: inset 0px 10px 12px -10px rgba(0, 0, 0, 0.6),
 				inset 0px -8px 12px -10px rgba(0, 0, 0, 0.5);
 	padding: 50px 0px 50px 125px;
@@ -45,16 +47,19 @@ div.summary a {
 div.summary a:hover {
 	color: orangered;
 }
+div.summary p:nth-child(2) {
+	padding: 25px 0px 0px 0px;
+	font-weight: 900;
+}
 div[role=article] {
 	margin: 25px 495px 25px 125px;
 }
 footer, .sidebar > .wrapper {
+	background-color: rgb(255, 219, 166);
 	box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.05),
 				0 6px 40px 0 rgba(0, 0, 0, 0.05);
 }
 footer {
-	background-color: #FFF7D0;
-	/* padding: 25px 0px 25px 125px; */
 	padding: 25px 0px 25px 33%; 
 	margin-top: 50px;
 }
@@ -63,8 +68,7 @@ footer > a {
 }
 .sidebar > .wrapper {
 	position: absolute;
-	background-color: #FFF7D0;
-	top: 222px;
+	top: 278px;
 	right: 0px;
 	width: 320px;
 	margin: 25px 125px 25px 25px;
@@ -98,5 +102,5 @@ abbr {
 }
 ul {
 	list-style-type: none;
-	background-color: rgb(255, 253, 243);
+	background-color: rgb(255, 245, 230);
 }
