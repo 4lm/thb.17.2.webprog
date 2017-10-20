@@ -224,6 +224,12 @@ abbr {
     top: 0px;
     margin-bottom: 150px;
   }
+  li:hover {
+    background-color: #ffffff;
+  }
+  li a:hover {
+    color: #c68400;
+  }
   .sidebar > .wrapper li {
     padding: 13px 25px 13px 25px;
     text-align: center;
@@ -234,7 +240,7 @@ abbr {
   footer {
     position: absolute;
     bottom: -150px;
-    padding: 38px 0px 38px 0px;
+    padding: 40px 0px 38px 0px;
     width: 100%;
   }
   footer a {
