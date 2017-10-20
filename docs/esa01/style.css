@@ -3,7 +3,7 @@
 	block-size: border-box; 
 	padding: 0px;
   margin: 0px;
-  overflow: hidden;
+  overflow: hidden-x;
 }
 html {
   background-color: #5c007a;
@@ -193,16 +193,10 @@ abbr {
     font-size: 1em;
   }
   header[role=banner] {
-    padding: 25px 0px 57px 0px;
+    padding: 25px 0px 57px 20px;
   }
   h1, h2, h3 {
     text-align: center;
-  }
-  h1 {
-    font-size: 45px;
-  }
-  h2 {
-    font-size: 28px;
   }
 	div[role=article] {
 		margin: 25px 25px 25px 25px;
@@ -234,19 +228,21 @@ abbr {
     margin-bottom: 150px;
   }
   .sidebar > .wrapper li {
-    padding: 13px 0px 13px 100px;
+    padding: 13px 0px 13px 25px;
+    text-align: center;
   }
   .sidebar h3 {
-    padding: 11px 0px 11px 100px;
+    padding: 11px 0px 11px 25px;
   }
   footer {
     position: absolute;
-    bottom: 0px;
-    padding: 38px 0 38px 0px; 
+    bottom: -150px;
+    padding: 38px 0px 38px 0px;
     width: 100%;
   }
   footer a {
-    text-align: left;
-    width: 15%;
+    text-align: center;
+    width: 20%;
+    padding: 0px 0px 5px 0px;
   }
 }
