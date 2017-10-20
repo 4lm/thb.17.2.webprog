@@ -34,7 +34,7 @@ div[role=article] > h3 {
 }
 header[role=banner] {
 	margin: 50px 0px 0px 0px;
-	padding: 25px 0px 50px 125px;
+	padding: 25px 0px 57px 125px;
 	background-color: #8e24aa;
 }
 div.summary {
@@ -62,8 +62,9 @@ ul {
 	background-color: #ffffff;
 }
 footer {
-	padding: 25px 0px 25px 33%; 
+	padding: 38px 0px 38px 33%; 
 	margin-top: 50px;
+	margin-bottom: 50px;
 }
 footer > a {
 	color: #ffffff;
