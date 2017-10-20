@@ -4,48 +4,49 @@
 	padding: 0px;
 	margin: 0px;
 }
+html {
+	background-color: #5c007a;
+}
 body {
-	background: linear-gradient(to top right, #C9D6FF, #E2E2E2);
-	color: rgb(15, 19, 19);
+	background-color: rgb(210,210,210);
+	color: #000000;
 	font-family: "Roboto", sans-serif;
 	font-size: 18px;
 }
 h1, h2, h3 {
-	color: rgb(35, 39, 39);
 	font-family: "Roboto Slab", serif;
 	text-shadow: 2px 2px 25px rgba(0, 0, 0, 0.15);
 }
 h1 {
-	margin: 25px 0px 25px 0px;
+	color: #ffffff;
 	font-size: 60px;
 	font-weight: 100;
 }
 h2 {
+	color: #ffffff;
 	font-size: 30px;
 	font-style: italic;
 	font-weight: 100;
 }
 div[role=article] > h3 {
+	color: #000000;
 	font-size: 20px;
 	margin: 50px 0px 25px 0px;
 }
-header[role=banner] > h1 {
-	padding: 0px 0px 0px 125px;
-}
-header[role=banner] > h2 {
-	background-color: rgb(255, 241, 221);
-	box-shadow: inset 0px 10px 12px -10px rgba(0, 0, 0, 0.6),
-				inset 0px -8px 12px -10px rgba(0, 0, 0, 0.5);
-	padding: 50px 0px 50px 125px;
+header[role=banner] {
+	margin: 50px 0px 0px 0px;
+	padding: 25px 0px 50px 125px;
+	background-color: #8e24aa;
 }
 div.summary {
+	padding: 25px 0px 0px 0px;
 	font-style: italic;
 }
 div.summary a {
-	color: rgb(197, 53, 0);
+	color: #5c007a;
 }
 div.summary a:hover {
-	color: orangered;
+	color: #c68400;
 }
 div.summary p:nth-child(2) {
 	padding: 25px 0px 0px 0px;
@@ -55,16 +56,25 @@ div[role=article] {
 	margin: 25px 495px 25px 125px;
 }
 footer, .sidebar > .wrapper {
-	background-color: rgb(255, 219, 166);
-	box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.05),
-				0 6px 40px 0 rgba(0, 0, 0, 0.05);
+	background-color: #8e24aa;
+}
+h3.select, h3.archives, h3.resources {
+	color: #ffffff;
+}
+ul {
+	list-style-type: none;
+	background-color: #ffffff;
 }
 footer {
 	padding: 25px 0px 25px 33%; 
 	margin-top: 50px;
 }
 footer > a {
+	color: #ffffff;
 	padding: 0px 50px 0px 25px;
+}
+footer > a:hover {
+	color: #ffe54c;
 }
 .sidebar > .wrapper {
 	position: absolute;
@@ -74,7 +84,6 @@ footer > a {
 	margin: 25px 125px 25px 25px;
 }
 .sidebar > .wrapper li {
-	font-style: italic;
 	font-size: 14px;
 	padding: 5px;
 }
@@ -89,18 +98,20 @@ footer > a {
 .sidebar h3 {
 	padding: 5px 0px 5px 5px;
 }
+li:hover {
+	background-color: #ffb300;
+}
+li a:hover {
+	color: white;
+}
 a {
-	color: rgb(35, 39, 69);
+	color: #5c007a;
 	font-weight: bold;
 	text-decoration: none;
 }
 a:hover {
-	color: rgb(75, 79, 109);
+	color: #c68400;
 }
 abbr {
 	text-decoration: none;
-}
-ul {
-	list-style-type: none;
-	background-color: rgb(255, 245, 230);
 }
