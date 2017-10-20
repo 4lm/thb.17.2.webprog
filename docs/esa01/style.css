@@ -8,7 +8,7 @@ html {
 	background-color: #5c007a;
 }
 body {
-	background-color: rgb(210,210,210);
+	background-color: rgb(225,225,225);
 	color: #000000;
 	font-family: "Roboto", sans-serif;
 	font-size: 18px;
@@ -57,9 +57,6 @@ div[role=article] {
 footer, .sidebar > .wrapper {
 	background-color: #8e24aa;
 }
-h3.select, h3.archives, h3.resources {
-	color: #ffffff;
-}
 ul {
 	list-style-type: none;
 	background-color: #ffffff;
@@ -77,14 +74,14 @@ footer > a:hover {
 }
 .sidebar > .wrapper {
 	position: absolute;
-	top: 274px;
+	top: 273px;
 	right: 0px;
 	width: 320px;
 	margin: 25px 125px 25px 25px;
 }
 .sidebar > .wrapper li {
 	font-size: 14px;
-	padding: 5px;
+	padding: 13px 0px 13px 10px;
 }
 .sidebar > .wrapper li > a {
 	font-style: normal;
@@ -94,8 +91,11 @@ footer > a:hover {
 	font-weight: 100;
 	font-size: 14px;
 }
+h3.select, h3.archives, h3.resources {
+	color: #ffffff;
+}
 .sidebar h3 {
-	padding: 5px 0px 5px 5px;
+	padding: 11px 0px 11px 10px;
 }
 li:hover {
 	background-color: #ffb300;
