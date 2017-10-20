@@ -56,7 +56,7 @@ div.summary p:nth-child(2) {
 .design-selection, .design-archives, .zen-resources {
   position: absolute;
   background-color: #8e24aa;
-  top: 273px;
+  top: 223px;
   right: 0px;
   width: 320px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -67,10 +67,10 @@ div.summary p:nth-child(2) {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 div.design-archives {
-  top: 773px;
+  top: 723px;
 }
 div.zen-resources {
-  top: 973px;
+  top: 923px;
 }
 .sidebar > .wrapper li {
 	font-size: 14px;
