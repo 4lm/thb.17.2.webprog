@@ -2,16 +2,14 @@
 * {
 	block-size: border-box; 
 	padding: 0px;
-	margin: 0px;
+  margin: 0px;
+  overflow: hidden;
 }
 html {
-  position: relative;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  min-height: 100%;
+  background-color: #5c007a;
 }
 body {
+  position: relative;
 	background-color: rgb(225,225,225);
 	color: #000000;
 	font-family: "Roboto", sans-serif;
@@ -190,11 +188,24 @@ abbr {
   
 /* Extra klein */
 @media (max-width: 991px) {
+  html {
+    background-color: #5c007a;
+    font-size: 1em;
+  }
   header[role=banner] {
-    padding: 25px 0px 57px 100px;
+    padding: 25px 0px 57px 0px;
+  }
+  h1, h2, h3 {
+    text-align: center;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 28px;
   }
 	div[role=article] {
-		margin: 25px 100px 25px 100px;
+		margin: 25px 25px 25px 25px;
 	}
   .design-selection, .design-archives, .zen-resources  {
     position: relative;
@@ -231,7 +242,7 @@ abbr {
   footer {
     position: absolute;
     bottom: 0px;
-    padding: 38px 0 38px 100px; 
+    padding: 38px 0 38px 0px; 
     width: 100%;
   }
   footer a {
