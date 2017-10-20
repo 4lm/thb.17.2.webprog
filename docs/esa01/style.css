@@ -51,9 +51,6 @@ div.summary p:nth-child(2) {
 	padding: 25px 0px 0px 0px;
 	font-weight: 900;
 }
-div[role=article] {
-	margin: 25px 495px 25px 125px;
-}
 footer, .sidebar > .wrapper {
 	background-color: #8e24aa;
 }
@@ -62,23 +59,25 @@ ul {
 	background-color: #ffffff;
 }
 footer {
-	padding: 38px 0px 38px 33%; 
 	margin-top: 50px;
-	margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 footer > a {
-	color: #ffffff;
-	padding: 0px 50px 0px 25px;
+  color: #ffffff;
+  text-align: center;
 }
 footer > a:hover {
 	color: #ffe54c;
 }
+footer a {
+  position: relative; 
+  float: left;
+}
 .sidebar > .wrapper {
-	position: absolute;
-	top: 273px;
-	right: 0px;
-	width: 320px;
-	margin: 25px 125px 25px 25px;
+  position: absolute;
+  top: 273px;
+  right: 0px;
+  width: 320px;
 }
 .sidebar > .wrapper li {
 	font-size: 14px;
@@ -86,7 +85,7 @@ footer > a:hover {
 }
 .sidebar > .wrapper li > a {
 	font-style: normal;
-	font-size: 18px;
+  font-size: 18px;
 }
 .sidebar > .wrapper li > a.designer-name {
 	font-weight: 100;
@@ -114,4 +113,82 @@ a:hover {
 }
 abbr {
 	text-decoration: none;
+}
+/* Groß */
+@media (min-width: 1440px) {
+  header[role=banner] {
+    padding: 25px 0px 57px 250px;
+  }
+	div[role=article] {
+		margin: 25px 645px 25px 250px;
+	}
+	.sidebar > .wrapper {
+		margin: 25px 250px 25px 25px;
+  }
+  footer {
+    padding: 38px 0 62px 33.33%; 
+    width: 100%;
+  }
+  footer a {
+    width: 5%;
+  }
+}
+/* Mittel */
+@media (min-width: 1100px) and (max-width: 1439px) {
+  header[role=banner] {
+    padding: 25px 0px 57px 125px;
+  }
+	div[role=article] {
+		margin: 25px 520px 25px 125px;
+	}
+	.sidebar > .wrapper {
+		margin: 25px 125px 25px 25px;
+  }
+  footer {
+    padding: 38px 0 62px 33.33%; 
+    width: 100%;
+  }
+  footer a {
+    width: 5%;
+  }
+}
+  
+/* Klein */
+@media (min-width: 840px) and (max-width: 1099px) {
+  header[role=banner] {
+    padding: 25px 0px 57px 75px;
+  }
+	div[role=article] {
+		margin: 25px 445px 25px 75px;
+	}
+	.sidebar > .wrapper {
+		margin: 25px 75px 25px 25px;
+  }
+  footer {
+    padding: 38px 0 62px 33.33%; 
+    width: 100%;
+  }
+  footer a {
+    width: 5%;
+  }
+}
+  
+/* Extra klein */
+@media (max-width: 839px) {
+    header[role=banner] {
+    padding: 25px 0px 57px 50px;
+  }
+	div[role=article] {
+		margin: 25px 445px 25px 50px;
+	}
+	.sidebar > .wrapper {
+		margin: 25px 50px 25px 25px;
+  }
+  footer {
+    padding: 38px 0 62px 33.33%; 
+    width: 100%;
+  }
+  footer a {
+    width: 5%;
+  }
 }
