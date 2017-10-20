@@ -185,7 +185,6 @@ abbr {
     width: 5%;
   }
 }
-  
 /* Extra klein */
 @media (max-width: 991px) {
   html {
@@ -193,13 +192,14 @@ abbr {
     font-size: 1em;
   }
   header[role=banner] {
-    padding: 25px 0px 57px 20px;
+    padding: 25px 50px 57px 50px;
   }
   h1, h2, h3 {
     text-align: center;
   }
 	div[role=article] {
-		margin: 25px 25px 25px 25px;
+    margin: 25px 50px 25px 50px;
+    text-align: justify;
 	}
   .design-selection, .design-archives, .zen-resources  {
     position: relative;
