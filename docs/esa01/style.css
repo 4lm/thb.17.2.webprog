@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
 * {
-	block-size: border-box; 
+	box-sizing: border-box; 
 	padding: 0px;
   margin: 0px;
-  overflow: hidden-x;
+
 }
 html {
   background-color: #5c007a;
@@ -172,13 +172,19 @@ abbr {
     font-size: 1em;
   }
   header[role=banner] {
-    padding: 25px 50px 57px 50px;
+    padding: 25px 25px 57px 25px;
   }
   h1, h2, h3 {
     text-align: center;
   }
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 20px;
+  }
 	div[role=article] {
-    margin: 25px 50px 25px 50px;
+    margin: 25px 25px 25px 25px;
     text-align: justify;
 	}
   .design-selection, .design-archives, .zen-resources  {
@@ -208,7 +214,7 @@ abbr {
     margin-bottom: 150px;
   }
   .sidebar > .wrapper li {
-    padding: 13px 0px 13px 25px;
+    padding: 13px 25px 13px 25px;
     text-align: center;
   }
   .sidebar h3 {
