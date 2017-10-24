@@ -47,6 +47,5 @@ function totalOrder() {
 }
 
 function submitOrder() {
-    alert(
-        "Bestellung getätigt!\n\nGesamtsumme: " + document.getElementById("total").innerHTML + " EUR");
+    alert("Bestellung getätigt!\n\nGesamtsumme: " + document.getElementById("total").innerHTML + " EUR");
 }
