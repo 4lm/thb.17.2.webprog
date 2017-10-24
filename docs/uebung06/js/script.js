@@ -47,6 +47,12 @@ function totalOrder() {
     document.getElementById("order").innerHTML = orderString;
 }
 
+form.addEventListener("change", matchAddressInput, true);
+
+function matchAddressInput() {
+    console.log("a change happened");
+}
+
 
 form.addEventListener("submit", submit);
 

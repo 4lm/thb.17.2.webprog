@@ -59,35 +59,35 @@
           </div>
         </div>
 				<div>
-					<h2>Lieferadresse:</h2>
+          <h2>Lieferadresse:</h2>
 					<table>
 						<tr>
 							<td>Vorname<span class="mandatory">*</span>:</td>
-							<td><input type="text" name="name" required></td>
+							<td><input type="text" name="name" pattern="[A-Za-z\-\sÄäÖöÜüß]+" required></td>
 						</tr>
 						<tr>
 							<td>Nachname<span class="mandatory">*</span>:</td>
-							<td><input type="text" name="surname" required></td>
+							<td><input type="text" name="surname" pattern="[A-Za-z\-\sÄäÖöÜüß]+" required></td>
 						</tr>
 						<tr>
 							<td>Straße<span class="mandatory">*</span>:</td>
-							<td><input type="text" name="street" required></td>
+							<td><input type="text" name="street" pattern=[A-Za-z\-\sÄäÖöÜüß]+ required></td>
 						</tr>
 						<tr>
 							<td>Hausnummer<span class="mandatory">*</span>:</td>
-							<td><input type="text" name="number" required></td>
+							<td><input type="text" name="number" pattern="[0-9]+" required></td>
 						</tr>
 						<tr>
 							<td>PLZ<span class="mandatory">*</span>:</td>
-							<td><input type="text" name="zip" required></td>
+							<td><input type="text" name="zip" pattern="[0-9]{5}" required></td>
 						</tr>
 						<tr>
 							<td>Ort<span class="mandatory">*</span>:</td>
-							<td><input type="text" name="zip" required></td>
+							<td><input type="text" name="city" pattern="[A-Za-z\-\sÄäÖöÜüß]+" required></td>
 						</tr>
 						<tr>
 							<td>Telefon:</td>
-							<td><input type="text" name="phone"></td>
+							<td><input type="text" name="phone" pattern="[\+0-9\-\s\(\)]+"></td>
 						</tr>
 					</table>
 					<div id="specification">(<span class="mandatory">*</span> Pflichtfeld)</div>
