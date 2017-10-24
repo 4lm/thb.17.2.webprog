@@ -8,35 +8,18 @@ function totalOrder() {
     var total = "";
 
     sum += parseFloat(form.size.value);
-    if (form.size.value == "5") {
+    if (form.size.value === "5") {
         order += "Pizza " + document.getElementById("size26").innerHTML + "<br>";
     } else {
         order += "Pizza " + document.getElementById("size32").innerHTML + "<br>";
     }
 
-    if (form.cheese.checked) {
-        sum += parseFloat(form.cheese.value);
-        order += document.getElementById("cheese").innerHTML + "<br>";
-    }
-    if (form.salami.checked) {
-        sum += parseFloat(form.salami.value);
-        order += document.getElementById("salami").innerHTML + "<br>";
-    }
-    if (form.spinace.checked) {
-        sum += parseFloat(form.spinace.value);
-        order += document.getElementById("spinace").innerHTML + "<br>";
-    }
-    if (form.pineapple.checked) {
-        sum += parseFloat(form.pineapple.value);
-        order += document.getElementById("pineapple").innerHTML + "<br>";
-    }
-    if (form.olives.checked) {
-        sum += parseFloat(form.olives.value);
-        order += document.getElementById("olives").innerHTML + "<br>";
-    }
-    if (form.garlic.checked) {
-        sum += parseFloat(form.garlic.value);
-        order += document.getElementById("garlic").innerHTML + "<br>";
+    var list = document.querySelectorAll("input[type=checkbox]");
+    for (var item of list) {
+        if (item.checked) {
+            sum += parseFloat(item.value);
+            order += document.getElementById(item.name).innerHTML + "<br>";
+        }
     }
 
     total = String(sum.toFixed(2));
