@@ -43,13 +43,14 @@ function totalOrder() {
     totalString = String(sum.toFixed(2));
     totalString = totalString.replace(".", ",");
     
-    document.getElementById("order").innerHTML = orderString;
     document.getElementById("total").innerHTML = totalString + " EUR";
+    document.getElementById("order").innerHTML = orderString;
 }
 
 
 form.addEventListener("submit", submit);
 
 function submit() {
-    alert("Gesamtsumme: x EUR");
+    alert(
+        "Bestellung getätigt!\n\nGesamtsumme: " + document.getElementById("total").innerHTML + " EUR");
 }
