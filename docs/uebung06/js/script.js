@@ -1,6 +1,6 @@
 var form = document.getElementById("form");
 form.addEventListener("click", totalOrder, true);
-form.addEventListener("submit", submit);
+form.addEventListener("submit", submitOrder);
 
 function totalOrder() {
     var sum = 0.0;
@@ -46,7 +46,7 @@ function totalOrder() {
     document.getElementById("order").innerHTML = order;
 }
 
-function submit() {
+function submitOrder() {
     alert(
         "Bestellung getätigt!\n\nGesamtsumme: " + document.getElementById("total").innerHTML + " EUR");
 }
