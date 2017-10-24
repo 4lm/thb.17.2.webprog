@@ -30,5 +30,5 @@ function totalOrder() {
 }
 
 function submitOrder() {
-    alert("Bestellung getätigt!\n\nGesamtsumme: " + document.getElementById("total").innerHTML);
+    alert("Bestellung get&auml;tigt!\n\nGesamtsumme: " + document.getElementById("total").innerHTML);
 }
