@@ -4,7 +4,11 @@
   overflow-wrap: break-word;
 }
 html {
+<<<<<<< HEAD
   background: url("https://4lm.github.io/thb.17.2.webprog/esa02/images/mountains.jpg") no-repeat center center fixed;
+=======
+  background: url(/images/mountains.jpg) no-repeat center center fixed;
+>>>>>>> 6d2fa5a1bbee3e9a462a3fcb26e29162b5d3132f
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
