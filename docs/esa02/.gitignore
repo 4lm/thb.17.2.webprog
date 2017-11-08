@@ -1,1 +1,4 @@
 *.log
+.firebaserc
+public/*
+firebase.json
