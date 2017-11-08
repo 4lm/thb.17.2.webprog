@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Slabo+27px" rel="stylesheet">
   <title>Gästebuch</title>
 </head>
 
@@ -15,14 +16,16 @@
       <div>
         <h1>Gästebuch</h1>
       </div>
-      <div>
-        <label>Name: </label>
-        <input id="name" type="text" required>
-      </div>
-      <div>
-        <label>E-Mail: </label>
-        <input id="email" type="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
-      </div>
+      <table>
+        <tr>
+          <td><label>Name: </label></td>
+          <td><input id="name" type="text" required></td>
+        </tr>
+        <tr>
+          <td><label>E-Mail: </label></td>
+          <td><input id="email" type="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required /></td>
+        </tr>
+      </table>
       <div>
         <label>Nachricht: </label>
       </div>
@@ -32,11 +35,10 @@
       <div>
         <button id="button">Eintragen</button>
       </div>
-    </div>
-    <div>
       <div id="list"></div>
     </div>
   </div>
+
   <script src="js/script.js"></script>
 </body>
 

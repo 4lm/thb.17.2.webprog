@@ -1,6 +1,71 @@
-.entries {
-  border: 1px solid black;
+* {
+  margin: 0px;
+  padding: 0px;
+  overflow-wrap: break-word;
 }
-#form {
-  border: 1px solid black;
+html {
+  background: url("/images/mountains.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  height: 100%;
+}
+body, button, input, textarea {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+#container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  background-color: white;
+  padding: 0px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  opacity: 0.9;
+}
+h1 {
+  text-align: center;
+  font-family: 'Slabo 27px', serif;
+  font-size: 64px;
+  background-color: lightgrey;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+div, td {
+  padding: 10px;
+}
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+}
+button {
+  border: none;
+  padding: 10px;
+  background-color: lightgrey;
+  color: black;
+}
+button:hover {
+  background-color: gray;
+  color: white;
+}
+input {
+  width: 100%;
+
+}
+.entries {
+  border: 1px solid lightgray;
+}
+#list {
+  padding-top: 40px;
+}
+.entries {
+  margin-top: 20px;
+  background-color: rgb(250, 250, 250);
+}
+.entry {
+  color: rgb(50, 50, 50);
 }
