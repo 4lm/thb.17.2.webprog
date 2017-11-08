@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Gästebuch</title>
+</head>
+
+<body>
+  <div id="container">
+    <div id="form">
+      <div>
+        <h1>Gästebuch</h1>
+      </div>
+      <div>
+        <label>Name: </label>
+        <input id="name" type="text" required>
+      </div>
+      <div>
+        <label>E-Mail: </label>
+        <input id="email" type="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
+      </div>
+      <div>
+        <label>Nachricht: </label>
+      </div>
+      <div>
+        <textarea id="text" cols="30" rows="10"type="text" required></textarea>
+      </div>
+      <div>
+        <button id="button">Eintragen</button>
+      </div>
+    </div>
+    <div>
+      <div id="list"></div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
