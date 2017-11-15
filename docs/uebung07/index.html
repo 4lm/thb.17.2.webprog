@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        li {
+            padding: 10px;
+        }
+    </style>
+    <title>Übungsaufgabe 7</title>
+</head>
+
+<body>
+    <div>
+        <h1>XPath Expressions</h1>
+        <p>Datei:
+            <a href="http://moodle.oncampus.de/pluginfile.php/1008744/mod_page/content/1/books.xml">books.xml</a>
+        </p>
+        <p>Link:
+            <a href="https://www.freeformatter.com/xpath-tester.html">XPath Tester</a>
+        </p>
+        <ol>
+            <li>The Book element: * oder /Book</li>
+            <li>All Titles within Book: */title oder /Book/title</li>
+            <li>All Titles: //title</li>
+            <li>All Titles within Person: //Person/title besser /Book/Person/title (// ist teuer)</li>
+            <li>All Elements within Person: //Person besser /Book/Person</li>
+            <li>All Elements within the second Person: //Person[2] besser /Book/Person[2]</li>
+            <li>All Type Attributes: //@type besser /Book/title/@type</li>
+            <li>All Title Elements with at least one attribute: //title[@*] besser /Book/title[@*]</li>
+            <li>All German Book titles: //title[@lang='de'] besser /Book/title[@lang='de']</li>
+            <li>All Elements with exactly two Person elements: *[count(Person) = 2] (eq 2 auch möglich)</li>
+            <li>All Elements with exactly three child elements: */*[count(*) = 3]</li>
+            <li>All First and last names: /Book/Person/*[self::LastName or self::FirstName]</li>
+            <li>All ancestors of LastName: /Book/Person/LastName/ancestor::*</li>
+            <li>All person ancestors of Title: /Book/Person/title/ancestor::Person</li>
+            <li>All sibling elements following FirstName: /Book/Person/FirstName/following-sibling::* oder 1 Person: (/Book/Person/FirstName)[1]/following-sibling::*
+                oder 2 Person: (/Book/Person/FirstName)[2]/following-sibling::*</li>
+            <li>All Role elements 'Editor': /Book/Person/role[text()='Editor']</li>
+            <li>All Titles containing the string "rie": /Book/title[text()='rie']</li>
+            <li>All LastNames with FirstName="John": /Book/title[contains(text(), 'rie')]</li>
+            <li>All Persons with a title element: /Book/Person/title/ancestor::Person besser Book/Person[title]</li>
+        </ol>
+    </div>
+</body>
+
+</html>
