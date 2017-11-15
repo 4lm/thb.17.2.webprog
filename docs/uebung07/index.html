@@ -69,7 +69,7 @@
             </tr>
             <tr>
                 <td>All First and last names</td>
-                <td>/Book/Person/*[self::LastName or self::FirstName]</td>
+                <td>/Book/Person/*[self::LastName or self::FirstName] oder /Book/Person/LastName | /Book/Person/FirstName</td>
             </tr>
             <tr>
                 <td>All ancestors of LastName</td>
@@ -89,11 +89,11 @@
             </tr>
             <tr>
                 <td>All Titles containing the string "rie"</td>
-                <td>/Book/title[text()='rie']</td>
+                <td>/Book/title[contains(text(), 'rie')]</td>
             </tr>
             <tr>
                 <td>All LastNames with FirstName="John"</td>
-                <td>/Book/title[contains(text(), 'rie')]</td>
+                <td>/Book/Person[FirstName/text()='John']/LastName</td>                    
             </tr>
             <tr>
                 <td>All Persons with a title element</td>
